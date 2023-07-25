@@ -32,6 +32,7 @@ export default () => {
   const botaoEntrar = container.querySelector('#btn-cinza-login');
   const inputEmail = container.querySelector("#input-email-login");
   const inputSenha = container.querySelector("#input-senha-login");
+  
 
   botaoEntrar.addEventListener('click', (event) => {
     event.preventDefault();

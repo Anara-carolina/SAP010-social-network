@@ -106,3 +106,30 @@
         display: none;
     }
 }
+
+/*testando */
+#caixa-de-texto {
+    width: 80vw;
+    background-color: #1e1e1e;
+    color: #FFFF;
+    border: 0px;
+    font-size: 20px;
+    padding: 10px 10px 0px;
+    text-align: center;
+    resize: none;
+    overflow: auto;
+    word-wrap: break-word;
+  }
+  
+  #caixa-de-texto::placeholder {
+    color: #FFFF;
+  }
+
+  .feed-nome {
+    background-color: #930909;
+    display: inline-block;
+    vertical-align: middle;
+    height: 100px;
+    
+  }
+  

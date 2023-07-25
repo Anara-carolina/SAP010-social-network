@@ -37,6 +37,11 @@ export default () => {
     <header>
      <picture id="mulher-feed"><img src="imagens/menina-feed.png"></picture>
     </header>
+    <div class="feed-nome">
+    <textarea id="caixa-de-texto" placeholder="Qual sua dica hoje?""></textarea>,</div>
+    <div class="div-btn-publicar">
+      <button class="btn-publicar">Publicar</button></div>
+      
      `
 
 
