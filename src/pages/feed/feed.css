@@ -218,7 +218,7 @@
     display: inline-block;
     width: -webkit-fill-available;
     text-align: center;
-    height: 80px;
+    min-height: 80px;
 }
 
 .botoes-post {

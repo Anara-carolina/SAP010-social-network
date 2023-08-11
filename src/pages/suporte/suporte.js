@@ -1,27 +1,31 @@
 import { sairDaConta } from '../../lib/firebase';
+import iconfeed from '../../imagens/icon-feed.png';
+import iconsos from '../../imagens/icon-sos.png';
+import iconsair from '../../imagens/icon-sair.png';
+import iconmenu from '../../imagens/icon-menu.png';
 
 export default () => {
   const container = document.createElement('div');
   container.id = 'csssuporte';
 
   const template = `
-    <div class="container-menu">
-   <nav id="menu">
-     <h1>FIGHT BACK</h1>
-     <ul class="lista-menu">
-      <li class="feed"><img src="imagens/icon-feed.png" class="icon-feed" alt="imagem para acessar o feed"></li>
-      <li><img src="imagens/icon-sos.png" class="icon-sos" alt="imagem para solicitar suporte"></li>
-      <li class="sair"><img src="imagens/icon-sair.png" class="icon-sair" alt="imagem para sair "></li>
-     </ul>
-     <button id="btn-menu"><img src="imagens/icon-menu.png"></button>
-    </nav>
-
-    <ul class="lista-menu-mobile">
-      <li class="feed"><img src="imagens/icon-feed.png" class="icon-feed" alt="imagem para acessar o feed"><p>Feed</p></li>
-      <li class="suporte"><img src="imagens/icon-sos.png" class="icon-sos" alt="imagem para solicitar suporte"><p>Suporte</p></li>
-      <li class="sair"><img src="imagens/icon-sair.png" class="icon-sair" alt="imagem para sair "><p>Sair</p></li>
+  <div class="container-menu">
+  <nav id="menu">
+    <h1>FIGHT BACK</h1>
+    <ul class="lista-menu">
+     <li><img src="${iconfeed}" class="icon-feed" alt="imagem para acessar o feed"></li>
+     <li class="suporte"><img src="${iconsos}" class="icon-sos" alt="imagem para solicitar suporte"></li>
+      <li class="sair"><img src="${iconsair}" class="icon-sair" alt="imagem para sair "></li>
     </ul>
-  </div>
+    <button id="btn-menu"><img src="${iconmenu}"></button>
+   </nav>
+
+   <ul class="lista-menu-mobile">
+     <li><img src="${iconfeed}" class="icon-feed" alt="imagem para acessar o feed"><p>Feed</p></li>
+     <li class="suporte"><img src="${iconsos}" class="icon-sos" alt="imagem para solicitar suporte"><p>Suporte</p></li>
+     <li class="sair"><img src="${iconsair}" class="icon-sair" alt="imagem para sair "><p>Sair</p></li>
+   </ul>
+ </div>
       <article>
       <p class="mensagem-sos">
       Você merece viver uma vida livre de medo e violência. Não importa sua origem, idade, raça, religião ou situação financeira, nosso compromisso é apoiá-la incondicionalmente.
