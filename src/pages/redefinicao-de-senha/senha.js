@@ -1,10 +1,11 @@
 import { redefinirSenha } from '../../lib/firebase';
+import iconvoltar from '../../imagens/icon-voltar.png';
 
 export default () => {
   const container = document.createElement('div');
   container.id = 'csssenha';
 
-  const template = `<nav><a href=""><img src="imagens/icon-voltar.png"></a></nav>
+  const template = `<nav><a href=""><img src="${iconvoltar}"></a></nav>
   <form>
   <h1>Redefinir senha</h1>
   <label for="input-redef-senha">Insira o email da conta que quer redefinir a senha:</label>

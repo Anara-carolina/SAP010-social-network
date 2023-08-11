@@ -7,6 +7,8 @@
 * [3. Histórias de usuário](#3-histórias-de-usuário)
 * [4. Testes unitários](#4-testes-unitários)
 * [5. Considerações gerais](#5-considerações-gerais)
+* [6. Tecnologias utilizadas](#6-tecnologias-utilizadas)
+* [7. Contato](#7-contato)
 
 ***
 
@@ -115,12 +117,12 @@ Os principais objetivos de aprendizagem atingidos foram:
   - Testes manuais buscando erros e imperfeições simples.
   - Testes de usabilidade.
 
-#### 4. Testes unitários
+### 4. Testes unitários
 
 * Os testes de unidade cobriram no mínimo 70% de _statements_, _functions_,
   _lines_ e _branches_.
 
-  ## 5. Considerações gerais
+### 5. Considerações gerais
 
 * Este projeto foi desenvolvido em dupla.
 
@@ -128,4 +130,27 @@ Os principais objetivos de aprendizagem atingidos foram:
   (ES6+), HTML e CSS :smiley:. Para este projeto não foi permitido o uso de
   _frameworks_ ou bibliotecas de CSS e JS.
 
+### 6. Tecnologias utilizadas
+
+<div>
+<img title="HTML5" alt="Favicon do HTML5" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" / width="40" height="40">  
+<img title="CSS3" alt="Favicon do CSS3" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" / width="40" height="40">  
+<img title="JavaScript" alt="Favicon do JavaScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" / width="40" height="40">  
+<img title="Git" alt="Favicon do Git" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain-wordmark.svg" /width="40" height="40">  
+<img title="GitHub" alt="Favicon do Github" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" / width="40" height="40"> 
+<img title="Figma" alt="Favicon do Figma" src="https://github.com/devicons/devicon/blob/v2.15.1/icons/figma/figma-original.svg" / width="40" height="40"> 
+<img title="Trello" alt="Favicon do Trello" src="https://github.com/devicons/devicon/blob/v2.15.1/icons/trello/trello-plain.svg" / width="40" height="40"> 
+<img title="Firebase" alt="Favicon do Firebase" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" / width="40" height="40"/>
+</div>
+
+### 7. Contato
+
+  <div>
+  Amanda Araujo <br>
+<a href = "mailto:amandascam03@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+<a href="https://www.linkedin.com/in/amanda-scam03" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
   
+  Anara Martins <br>
+<a href = "mailto:anaramartins31@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+<a href="https://www.linkedin.com/in/anara-martins-4740b0108/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
+</div>
