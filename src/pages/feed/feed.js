@@ -107,7 +107,6 @@ export default () => {
        </div>`;
     const modal = document.getElementById('modal');
     const modalText = document.getElementById('modal-text');
-    const modalClose = document.getElementById('modal-close');
 
     const btnDeletar = postElement.querySelector('.btn-deletar');
 
@@ -120,6 +119,7 @@ export default () => {
         modal.style.display = 'block';
       } else {
         modalText.textContent = 'Você só pode deletar o seu próprio post';
+        modal.style.display = 'block';
       }
     });
 
@@ -136,6 +136,7 @@ export default () => {
               const postTextoElement = postElement.querySelector('.conteudo');
               postTextoElement.textContent = novoConteudo;
               modalText.textContent = 'Post editado com sucesso!';
+              modal.style.display = 'block';
             })
             .catch((error) => {
               console.error('Erro ao editar o post:', error);
@@ -143,6 +144,7 @@ export default () => {
         }
       } else {
         modalText.textContent = 'Você só pode editar o próprio post';
+        modal.style.display = 'block';
       }
     });
 

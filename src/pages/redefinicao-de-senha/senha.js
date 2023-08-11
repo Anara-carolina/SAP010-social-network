@@ -10,7 +10,8 @@ export default () => {
   <label for="input-redef-senha">Insira o email da conta que quer redefinir a senha:</label>
   <input type="email" id="input-redef-senha" name="email" placeholder="Email" autocomplete="off">
   <button id="enviar-email">Enviar</button>
-  </form>`;
+  </form>
+  `;
 
   container.innerHTML = template;
 
@@ -23,7 +24,6 @@ export default () => {
       .then(() => {
         // Password reset email sent!
         // ..
-        alert('Email de redefinição de senha enviado com sucesso. Verifique sua caixa de entrada.');
       })
       .catch((error) => {
         const errorCode = error.code;
