@@ -114,6 +114,7 @@ export default () => {
        </div>`;
     const modal = document.getElementById('modal');
     const modalText = document.getElementById('modal-text');
+    const modalClose = document.getElementById('modal-close');
 
     const btnDeletar = postElement.querySelector('.btn-deletar');
 
