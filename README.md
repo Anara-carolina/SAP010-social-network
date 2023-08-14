@@ -96,10 +96,10 @@ Os principais objetivos de aprendizagem atingidos foram:
 
 **Foi feita uma pesquisa pelo Google Forms para obter informações do que os usuários precisavam para o site e selecionamos as opções mais relevantes e que estavam ao nosso alcance para entregar os melhor para os usuários.**
 
-![Captura de tela 2023-08-11 122950](https://github.com/amandascam03/SAP010-social-network/assets/131325234/361705e3-350d-493f-b55a-abb24dd02f13)
-![Captura de tela 2023-08-11 122950](https://github.com/amandascam03/SAP010-social-network/assets/131325234/c663a19f-1699-4613-a47d-fa2b8554be55)
-![Captura de tela 2023-08-11 123014](https://github.com/amandascam03/SAP010-social-network/assets/131325234/8eab028d-cc75-4675-953e-b5a21b2d27da)
-![Captura de tela 2023-08-11 123130](https://github.com/amandascam03/SAP010-social-network/assets/131325234/6db11872-5a40-4d8d-9dfd-579af290feeb)
+![respostas](https://github.com/amandascam03/SAP010-social-network/assets/131325234/361705e3-350d-493f-b55a-abb24dd02f13)
+![respostas](https://github.com/amandascam03/SAP010-social-network/assets/131325234/c663a19f-1699-4613-a47d-fa2b8554be55)
+![respostas](https://github.com/amandascam03/SAP010-social-network/assets/131325234/8eab028d-cc75-4675-953e-b5a21b2d27da)
+![respostas](https://github.com/amandascam03/SAP010-social-network/assets/131325234/6db11872-5a40-4d8d-9dfd-579af290feeb)
 
 
 **Para organizar as histórias de usuário, utilizamos o Trello.**
@@ -119,15 +119,18 @@ Os principais objetivos de aprendizagem atingidos foram:
 
 ### 4. Testes unitários
 
-* Os testes de unidade cobriram no mínimo 70% de _statements_, _functions_,
+* Os testes de unidade cobriram 100% de _statements_, _functions_,
   _lines_ e _branches_.
+
+  ![testes-unitários](https://github.com/amandascam03/SAP010-social-network/assets/131325234/cf809263-cbe6-4e6c-b430-aa64e61fcaa9)
+
 
 ### 5. Considerações gerais
 
 * Este projeto foi desenvolvido em dupla.
 
 * A lógica do projeto foi implementada completamente em JavaScript
-  (ES6+), HTML e CSS :smiley:. Para este projeto não foi permitido o uso de
+  (ES6+), HTML e CSS. Para este projeto não foi permitido o uso de
   _frameworks_ ou bibliotecas de CSS e JS.
 
 ### 6. Tecnologias utilizadas
