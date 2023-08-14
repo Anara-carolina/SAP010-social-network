@@ -37,8 +37,8 @@ Os principais objetivos de aprendizagem atingidos foram:
 
 **Protótipos de baixa e alta fidelidade:**
 
-![baixa-fidelidade1](https://github.com/amandascam03/SAP010-social-network/assets/131325234/19da3c93-25a5-4b83-a0b4-4be8c7d739ee)
-![baixa-fidelidade2](https://github.com/amandascam03/SAP010-social-network/assets/131325234/521723c7-d7ca-448c-b804-0cca2e4a1a89)
+![baixa-fidelidade1](https://github.com/amandascam03/SAP010-social-network/assets/131325234/ea1bc505-1b32-4294-b89e-1e8aae42799d)
+![baixa-fidelidade2](https://github.com/amandascam03/SAP010-social-network/assets/131325234/b30c8f04-b782-44b1-8f4e-6240f21c4463)
 ![alta-fidelidade](https://github.com/amandascam03/SAP010-social-network/assets/131325234/9178abcc-2db0-4841-939e-a06737ca3f63)
 
 ### HTML
