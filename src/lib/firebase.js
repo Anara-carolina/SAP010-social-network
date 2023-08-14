@@ -53,28 +53,26 @@ export async function deletarPost(postId) {
 }
 
 export async function exibirPosts() {
-  try {
-    const querySnapshot = await getDocs(collection(db, 'posts'));
-    console.log(querySnapshot);
-    if (!querySnapshot.docs.length) {
-      console.log('A collection está vazia.');
-      return { querySnapshot, array: [] };
-    }
-    const array = [];
-    querySnapshot.forEach((documento) => {
-      const post = documento.data();
-      array.push({
-        ...post,
-        id: documento.id,
-      });
-      // console.log(`${doc.id} => ${doc.data()}`);
-    });
-    console.log(querySnapshot);
-    return array;
-  } catch (error) {
-    console.error('erro ao obter os posts', error);
-    throw Error('erro ao obter os posts', error);
+  const querySnapshot = await getDocs(collection(db, 'posts'));
+  console.log(querySnapshot);
+  if (!querySnapshot.docs.length) {
+    console.log('A collection está vazia.');
+    return { querySnapshot, array: [] };
   }
+  const array = querySnapshot.docs.map((documento) => {
+    const post = documento.data();
+    return {
+      ...post,
+      id: documento.id,
+    };
+    // console.log(`${doc.id} => ${doc.data()}`);
+  });
+  console.log(array);
+  return array;
+  // catch (error) {
+  //   console.error('erro ao obter os posts', error);
+  //   throw Error('erro ao obter os posts', error);
+  // }
 }
 
 export async function editarPost(postId, novoConteudo) {
