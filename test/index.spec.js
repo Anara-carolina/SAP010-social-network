@@ -1,29 +1,29 @@
-// import {
-//   createUserWithEmailAndPassword,
-//   sendPasswordResetEmail,
-//   signInWithEmailAndPassword,
-//   signOut,
-//   updateProfile,
-// } from 'firebase/auth';
+import {
+  createUserWithEmailAndPassword,
+  sendPasswordResetEmail,
+  signInWithEmailAndPassword,
+  signOut,
+  updateProfile,
+} from 'firebase/auth';
 
 import {
-  // addDoc,
-  // deleteDoc,
+  addDoc,
+  deleteDoc,
   getDocs,
-  // updateDoc,
-  collection,
+  updateDoc,
+  // collection,
 } from 'firebase/firestore';
 
 import {
-  // cadastrarUsuario,
-  // atualizarNomeDoUsuario,
-  // loginUsuario,
-  // sairDaConta,
-  // redefinirSenha,
+  cadastrarUsuario,
+  atualizarNomeDoUsuario,
+  loginUsuario,
+  sairDaConta,
+  redefinirSenha,
   exibirPosts,
-  // adicionarPost,
-  // editarPost,
-  // deletarPost,
+  adicionarPost,
+  editarPost,
+  deletarPost,
 } from '../src/lib/firebase';
 
 jest.mock('firebase/auth');
@@ -42,11 +42,11 @@ jest.mock('firebase/firestore', () => {
     deleteDoc: jest.fn(),
     updateDoc: jest.fn(),
     collection: jest.fn(),
+    doc: jest.fn(),
   };
 });
-/*
 
-describe(cadastrarUsuario, () => {
+describe('testes da fução cadastrarUsuario', () => {
   it('deve ser uma função', () => {
     expect(typeof cadastrarUsuario).toBe('function');
   });
@@ -119,7 +119,7 @@ describe(adicionarPost, () => {
     adicionarPost(nome, conteudo, nivel);
     expect(addDoc).toHaveBeenCalledTimes(1);
   });
-}); */
+});
 
 describe('testes da função exibirPosts', () => {
   it('deve ser uma função', () => {
@@ -128,51 +128,52 @@ describe('testes da função exibirPosts', () => {
 
   it('deve exibir os posts na tela', () => {
     exibirPosts();
-    // const collection = jest.fn();
-    const db = jest.fn();
-    const posts = 'posts';
-    // expect(getDocs).toHaveBeenCalledTimes(1);
-    expect(getDocs).toHaveBeenCalledWith(collection(db, posts));
+    expect(getDocs).toHaveBeenCalledTimes(1);
   });
 
-  it('deve testar apos if', () => {
-    exibirPosts();
-    // const collection = jest.fn();
-    const db = jest.fn();
-    const posts = 'posts';
-    // expect(getDocs).toHaveBeenCalledTimes(1);
-    // getDocs.mockResolvedValue(
-    //   'texto',
-    // );
-    expect(getDocs).toHaveBeenCalledWith(collection(db, posts));
+  it('deve testar apos if', async () => {
+    const mockDocument1 = {
+      id: 'doc1',
+      data: jest.fn().mockReturnValue({ post: 'Post 1' }),
+    };
+    const mockDocument2 = {
+      id: 'doc2',
+      data: jest.fn().mockReturnValue({ post: 'Post 2' }),
+    };
+    const mockSnapshot = { docs: [mockDocument1, mockDocument2] };
+    getDocs.mockResolvedValue(mockSnapshot);
+
+    const result = await exibirPosts();
+
+    expect(getDocs).toHaveBeenCalledTimes(2);
+    expect(result).toEqual([
+      { post: 'Post 1', id: 'doc1' },
+      { post: 'Post 2', id: 'doc2' },
+    ]);
   });
 });
 
-// describe(editarPost, () => {
-//   it('deve ser uma função', () => {
-//     expect(typeof editarPost).toBe('function');
-//   });
+describe(editarPost, () => {
+  it('deve ser uma função', () => {
+    expect(typeof editarPost).toBe('function');
+  });
 
-//   it('deve editar o post', () => {
-//     const postId = 'w6sasidbjs';
-//     const novoConteudo = 'ola, boa noite';
-//     editarPost(postId, novoConteudo);
-//     expect(updateDoc).toHaveBeenCalledTimes(1);
-//   });
-// });
+  it('deve editar o post', () => {
+    const postId = 'w6sasidbjs';
+    const novoConteudo = 'ola, boa noite';
+    editarPost(postId, novoConteudo);
+    expect(updateDoc).toHaveBeenCalledTimes(1);
+  });
+});
 
-// describe(deletarPost, () => {
-//   it('deve ser uma função', () => {
-//     expect(typeof deletarPost).toBe('function');
-//   });
+describe(deletarPost, () => {
+  it('deve ser uma função', () => {
+    expect(typeof deletarPost).toBe('function');
+  });
 
-//   it('deve deletar o post', () => {
-//     const id = 'wog5ybcj';
-//     // const collection = jest.fn();
-//     // const db = jest.fn();
-//     // const posts = 'posts';
-//     deletarPost(id);
-//     expect(deleteDoc).toHaveBeenCalledTimes(1);
-//     // expect(deleteDoc).toHaveBeenCalledWith(collection(db, posts));
-//   });
-// });
+  it('deve deletar o post', () => {
+    const id = 'wog5ybcj';
+    deletarPost(id);
+    expect(deleteDoc).toHaveBeenCalledTimes(1);
+  });
+});

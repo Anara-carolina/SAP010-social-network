@@ -13,7 +13,7 @@ export default () => {
   <nav id="menu">
     <h1>FIGHT BACK</h1>
     <ul class="lista-menu">
-     <li><img src="${iconfeed}" class="icon-feed" alt="imagem para acessar o feed"></li>
+     <li class="feed"><img src="${iconfeed}" class="icon-feed" alt="imagem para acessar o feed"></li>
      <li class="suporte"><img src="${iconsos}" class="icon-sos" alt="imagem para solicitar suporte"></li>
       <li class="sair"><img src="${iconsair}" class="icon-sair" alt="imagem para sair "></li>
     </ul>
