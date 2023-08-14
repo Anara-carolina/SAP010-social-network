@@ -21,7 +21,7 @@ viver sem elas. Redes sociais contém vários tipos de nichos diferentes de acor
 
 Neste projeto nós construímos uma Rede Social sobre defesa pessoal para mulheres. É direcionado para mulheres que desejam receber dicas de como se defender de possíveis ataques e violências, contando com uma rede de apoio disposta a ajudar independente do nível de conhecimento (iniciante, intermediário ou avançado), que também fica exposto nas postagens de cada usuário. Nossa Rede Social permite à qualquer usuário criar uma conta de acesso, logar-se com ela, criar, editar e deletar publicações.
 
-## 2. Objetivos de aprendizagem
+## 3. Objetivos de aprendizagem
 
 O objetivo principal de aprendizagem deste projeto foi construir uma Single-page Application (SPA) responsiva (com mais de uma tela/ página) na qual seja possível ler e escrever dados.
 
@@ -92,7 +92,7 @@ Os principais objetivos de aprendizagem atingidos foram:
 - [x] **Firebase Auth**
 - [x] **Firestore**
 
-### 3. Histórias de usuário
+### 4. Histórias de usuário
 
 **Foi feita uma pesquisa pelo Google Forms para obter informações do que os usuários precisavam para o site e selecionamos as opções mais relevantes e que estavam ao nosso alcance para entregar os melhor para os usuários.**
 
@@ -117,7 +117,7 @@ Os principais objetivos de aprendizagem atingidos foram:
   - Testes manuais buscando erros e imperfeições simples.
   - Testes de usabilidade.
 
-### 4. Testes unitários
+### 5. Testes unitários
 
 * Os testes de unidade cobriram 100% de _statements_, _functions_,
   _lines_ e _branches_.
@@ -125,7 +125,7 @@ Os principais objetivos de aprendizagem atingidos foram:
   ![testes-unitários](https://github.com/amandascam03/SAP010-social-network/assets/131325234/cf809263-cbe6-4e6c-b430-aa64e61fcaa9)
 
 
-### 5. Considerações gerais
+### 6. Considerações gerais
 
 * Este projeto foi desenvolvido em dupla.
 
@@ -133,7 +133,7 @@ Os principais objetivos de aprendizagem atingidos foram:
   (ES6+), HTML e CSS. Para este projeto não foi permitido o uso de
   _frameworks_ ou bibliotecas de CSS e JS.
 
-### 6. Tecnologias utilizadas
+### 7. Tecnologias utilizadas
 
 <div>
 <img title="HTML5" alt="Favicon do HTML5" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" / width="40" height="40">  
@@ -146,7 +146,7 @@ Os principais objetivos de aprendizagem atingidos foram:
 <img title="Firebase" alt="Favicon do Firebase" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" / width="40" height="40"/>
 </div>
 
-### 7. Contato
+### 8. Contato
 
   <div>
   Amanda Araujo <br>
